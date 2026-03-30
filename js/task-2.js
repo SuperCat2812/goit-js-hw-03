@@ -4,6 +4,9 @@ function makeArray(firstArray, secondArray, maxLength) {
   allArray.push(...secondArray);
 
   let total = [];
+  if (allArray.length <= maxLength) {
+    return allArray;
+  }
   for (let i = 0; i < maxLength; i++) {
     total.push(allArray[i]);
   }
